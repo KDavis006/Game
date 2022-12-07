@@ -26,9 +26,7 @@ h1 {
  border-radius: 1.5625rem;
 }
 
-div{
- 
-}
+
 
 button{
  width: 4.6875rem;
@@ -38,6 +36,9 @@ button{
  border: .25rem solid green;
  border-radius: 1.5625rem;
  color: green;
+ text-transform: capitalize;
+ font-size: 1rem;
+ font-weight: 700;
 }
 
 #keyboard-cont {

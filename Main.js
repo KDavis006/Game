@@ -11,7 +11,7 @@ for(i=0;i<=99;i++){
  if(rand1 == rand2 || rand1 == rand3 || rand1 == rand4 || rand2 == rand3 || rand2 == rand4 || rand3 == rand4){
   continue
  } else {
-  return
+  break
  }
 }
 
@@ -22,7 +22,7 @@ for(let i = 1; i <= 4; i++){
     document.getElementById(`character${x}`).innerText = z;
 }
 
-function fill(character){
+function onkeypress(character){
  for(let i = 1; i <= 25; i++){
  let x = document.getElementById(`character${i}`).innerText
  if(x == ""){

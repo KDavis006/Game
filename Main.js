@@ -22,7 +22,7 @@ for(let i = 1; i <= 4; i++){
     document.getElementById(`character${x}`).innerText = z;
 }
 
-function onkeypress(character){
+function fill(character){
  for(let i = 1; i <= 25; i++){
  let x = document.getElementById(`character${i}`).innerText
  if(x == ""){

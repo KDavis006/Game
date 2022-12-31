@@ -65,3 +65,8 @@ button{
  text-transform: uppercase;
  color: green;
 }
+
+
+#hidden{
+ display: none;
+}

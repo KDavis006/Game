@@ -78,6 +78,7 @@ function makeid() {
         document.getElementById(`character${v}`).innerText = result
         array.push(v);
     }
+    let x = [["","","","",""],[],[],[],[]]
     console.log(array);
     return result;
 }
@@ -106,44 +107,44 @@ function submit(){
  }
  }
   for(let i = 1; i <= 5; i++){
-    let q = document.getElementById(`character${i}`).innerText
-    word1 = word1.concat("", q);
+    let wrd1 = document.getElementById(`character${i}`).innerText
+    word1 = word1.concat("", wrd1);
 
   }
   array2.push(word1);
   for(let i = 6; i <= 10; i++){
-    let w = document.getElementById(`character${i}`).innerText
-    word2 = word2.concat("", w);
+    let wrd2 = document.getElementById(`character${i}`).innerText
+    word2 = word2.concat("", wrd2);
 
   }
   array2.push(word2);
   for(let i = 11; i <= 15; i++){
-    let e = document.getElementById(`character${i}`).innerText
-    word3 = word3.concat("", e);
+    let wrd3 = document.getElementById(`character${i}`).innerText
+    word3 = word3.concat("", wrd3);
 
   }
   array2.push(word3);
   for(let i = 16; i <= 20; i++){
-    let r = document.getElementById(`character${i}`).innerText
-    word4 = word4.concat("", r);
+    let wrd4 = document.getElementById(`character${i}`).innerText
+    word4 = word4.concat("", wrd4);
 
   }
   array2.push(word4);
   for(let i = 21; i <= 25; i++){
-    let t = document.getElementById(`character${i}`).innerText
-    word5 = word5.concat("", t);
+    let wrd5 = document.getElementById(`character${i}`).innerText
+    word5 = word5.concat("", wrd5);
 
   }
   array2.push(word5);
   for(let i = 1; i <= 21; i+=5){
-    let y = document.getElementById(`character${i}`).innerText
-    word6 = word6.concat("", y);
+    let wrd6 = document.getElementById(`character${i}`).innerText
+    word6 = word6.concat("", wrd6);
 
   }
   array2.push(word6);
   for(let i = 2; i <= 22; i+=5){
-    let u = document.getElementById(`character${i}`).innerText
-    word7 = word7.concat("", u);
+    let wrd7 = document.getElementById(`character${i}`).innerText
+    word7 = word7.concat("", wrd7);
 
   }
   array2.push(word7);
@@ -154,14 +155,14 @@ function submit(){
   }
   array2.push(word8);
   for(let i = 4; i <= 24; i+=5){
-    let o = document.getElementById(`character${i}`).innerText
-    word9 = word9.concat("", o);
+    let wrd9 = document.getElementById(`character${i}`).innerText
+    word9 = word9.concat("", wrd9);
 
   }
   array2.push(word9);
   for(let i = 5; i <= 25; i+=5){
-    let p = document.getElementById(`character${i}`).innerText
-    word10 = word10.concat("", p);
+    let wrd10 = document.getElementById(`character${i}`).innerText
+    word10 = word10.concat("", wrd10);
 
   }
   array2.push(word10);

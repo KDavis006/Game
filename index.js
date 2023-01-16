@@ -30,16 +30,15 @@ let array = []
 
 function makeid() {
     let result           = '';
-    let characters       = 'abcdefghijklmnopqrstuvwxyz';
-    let charactersLength = characters.length;
+    let characters       = 'aeioshrtn';
     for ( let i = 0; i < 4; i++ ) {
-        let n = Math.ceil((Math.random() + 0.001) * charactersLength);
+        let n = Math.ceil((Math.random() + 0.001) * characters.length);
         switch(n){
             case 0:
                 n = 1;
                 break;
-            case 26:
-                n = 25;
+            case 10:
+                n = 9;
                 break;
         }
         result = characters.charAt(n);

@@ -233,11 +233,11 @@ function submit(){
       if(arrayword == WORDS[i]){
         continue
       } else {
-        alert("try again");
+        document.getElementById('lose').style.display='block'
         return
       }
     }
-    alert("good job");
+    document.getElementById('id01').style.display='block'
   }
 }
 

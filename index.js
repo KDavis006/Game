@@ -1,29 +1,3 @@
-
-
-let rand1 = 0
-let rand2 = 0
-let rand3 = 0
-let rand4 = 0
-
-for(i=0;i<=99;i++){
- rand1 = Math.round(Math.random()*25)
- rand2 = Math.round(Math.random()*25)
- rand3 = Math.round(Math.random()*25)
- rand4 = Math.round(Math.random()*25)
- if(rand1 == rand2 || rand1 == rand3 || rand1 == rand4 || rand2 == rand3 || rand2 == rand4 || rand3 == rand4){
-  continue
- } else {
-  break
- }
-}
-
-// for(let i = 1; i <= 4; i++){
-//     let kbbutton = Math.round(Math.random()*26);
-//     let z = document.getElementById(`button${kbbutton}`).innerText
-//     let x = `rand${i}`;
-//     document.getElementById(`character${x}`).innerText = z;
-// }
-
 function fill(character){
  for(let i = 1; i <= 25; i++){
  let x = document.getElementById(`character${i}`).innerText
@@ -51,9 +25,9 @@ function del(){
     }
 }
 
-let array = [
+let array = []
+let array3 = []
 
-]
 
 function makeid() {
     let result           = '';
@@ -69,7 +43,6 @@ function makeid() {
                 break;
         }
         result = characters.charAt(n);
-        
         let v = Math.ceil((Math.random() + 0.001)*25);
         do {   
             v = Math.ceil((Math.random() + 0.001)*25);
@@ -80,7 +53,93 @@ function makeid() {
     }
     let x = [["","","","",""],[],[],[],[]]
     console.log(array);
+    check()
     return result;
+}
+
+let arrayword1 = ""
+let arrayword2 = ""
+let arrayword3 = ""
+let arrayword4 = ""
+let arrayword5 = ""
+let arrayword6 = ""
+let arrayword7 = ""
+let arrayword8 = ""
+let arrayword9 = ""
+let arrayword10 = ""
+
+function check(){
+  for(let i = 1; i <= 5; i++){
+    let arraywrd1 = document.getElementById(`character${i}`).innerText
+    arrayword1 = word1.concat("", arraywrd1);
+
+  }
+  array3.push(arrayword1);
+  for(let i = 6; i <= 10; i++){
+    let arraywrd2 = document.getElementById(`character${i}`).innerText
+    arrayword2 = arrayword2.concat("", arraywrd2);
+
+  }
+  array3.push(arrayword2);
+  for(let i = 11; i <= 15; i++){
+    let arraywrd3 = document.getElementById(`character${i}`).innerText
+    arrayword3 = arrayword3.concat("", arraywrd3);
+
+  }
+  array3.push(arrayword3);
+  for(let i = 16; i <= 20; i++){
+    let arraywrd4 = document.getElementById(`character${i}`).innerText
+    arrayword4 = word4.concat("", arraywrd4);
+
+  }
+  array3.push(arrayword4);
+  for(let i = 21; i <= 25; i++){
+    let arraywrd5 = document.getElementById(`character${i}`).innerText
+    arrayword5 = arrayword5.concat("", arraywrd5);
+
+  }
+  array3.push(arrayword5);
+  for(let i = 1; i <= 21; i+=5){
+    let arraywrd6 = document.getElementById(`character${i}`).innerText
+    arrayword6 = arrayword6.concat("", arraywrd6);
+
+  }
+  array3.push(arrayword6);
+  for(let i = 2; i <= 22; i+=5){
+    let arraywrd7 = document.getElementById(`character${i}`).innerText
+    arrayword7 = word7.concat("", arraywrd7);
+
+  }
+  array3.push(arrayword7);
+  for(let i = 3; i <= 23; i+=5){
+    let arraywrd8 = document.getElementById(`character${i}`).innerText
+    arrayword8 = word8.concat("", arraywrd8);
+
+  }
+  array3.push(arrayword8);
+  for(let i = 4; i <= 24; i+=5){
+    let arraywrd9 = document.getElementById(`character${i}`).innerText
+    arrayword9 = word9.concat("", arraywrd9);
+
+  }
+  array3.push(arrayword9);
+  for(let i = 5; i <= 25; i+=5){
+    let arraywrd10 = document.getElementById(`character${i}`).innerText
+    arrayword10 = arrayword10.concat("", arraywrd10);
+
+  }
+  array3.push(arrayword10);
+  console.log(array3);
+  if(array3[arrayword1].length >= 3 || array3[arrayword2].length >= 3 || array3[arrayword3].length >= 3 || array3[arrayword4].length >= 3 || array3[arrayword5].length >= 3 || array3[arrayword6].length >= 3 || array3[arrayword7].length >= 3 || array3[arrayword8].length >= 3 || array3[arrayword9].length >= 3 || array3[arrayword10].length >= 3){
+    fullclear()
+    makeid()
+  }
+}
+
+function fullclear(){
+  for(let i = 1; i <= 25; i++){
+    document.getElementById(`character${i}`).innerText = ""
+  }
 }
 
 let array2 = [];
@@ -100,8 +159,8 @@ let arrayword = ""
 
 function submit(){
     for(let i = 1; i <= 25; i++){
- let l = document.getElementById(`character${i}`).innerText
- if(l == ""){
+ let wrd = document.getElementById(`character${i}`).innerText
+ if(wrd == ""){
     alert("Please fill out all boxes");
     return
  }
@@ -175,11 +234,11 @@ function submit(){
       if(arrayword == WORDS[i]){
         continue
       } else {
-        alert("try again");
+        document.getElementById('lose').style.display='block'
         return
       }
     }
-    alert("good job");
+    document.getElementById('id01').style.display='block'
   }
 }
 

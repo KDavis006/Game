@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="main.css">
+ <script src="./index.js"></script>
+ <title>Document</title>
+</head>
+<body onload="makeid();">
+
+ <h1 class = "fancy">Eternal Armada</h1>
+ <div id="container">
+  <div id = "row-1">
+   <div><button id = "character1"></button></div>
+   <div><button id = "character6"></button></div>
+   <div><button id = "character11"></button></div>
+   <div><button id = "character16"></button></div>
+   <div><button id = "character21"></button></div>
+  </div>
+  <div id = "row-2">
+   <div><button id = "character2"></button></div>
+   <div><button id = "character7"></button></div>
+   <div><button id = "character12"></button></div>
+   <div><button id = "character17"></button></div>
+   <div><button id = "character22"></button></div>
+  </div>
+  <div id = "row-3">
+   <div><button id = "character3"></button></div>
+   <div><button id = "character8"></button></div>
+   <div><button id = "character13"></button></div>
+   <div><button id = "character18"></button></div>
+   <div><button id = "character23"></button></div>
+  </div>
+  <div id = "row-4">
+   <div><button id = "character4"></button></div>
+   <div><button id = "character9"></button></div>
+   <div><button id = "character14"></button></div>
+   <div><button id = "character19"></button></div>
+   <div><button id = "character24"></button></div>
+  </div>
+  <div id = "row-5">
+   <div><button id = "character5"></button></div>
+   <div><button id = "character10"></button></div>
+   <div><button id = "character15"></button></div>
+   <div><button id = "character20"></button></div>
+   <div><button id = "character25"></button></div>
+  </div>
+ </div>
+
+ <div id="lose" class="modal">
+
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="container">
+        <h1>You Lose</h1>
+        <h1>Try Again</h1>
+  
+        <h1 onclick="document.getElementById('lose').style.display='none'" class="cancelbtn"
+          title="Close Modal">&times;</h1>
+      </div>
+    </form>
+  </div>
+ <div id="keyboard-cont">
+  <div class="first-row">
+   <button class="keyboard-button" id = "button1" onclick="fill('q')">q</button>
+   <button class="keyboard-button" id = "button2" onclick="fill('w')">w</button>
+   <button class="keyboard-button" id = "button3" onclick="fill('e')">e</button>
+   <button class="keyboard-button" id = "button4" onclick="fill('r')">r</button>
+   <button class="keyboard-button" id = "button5" onclick="fill('t')">t</button>
+   <button class="keyboard-button" id = "button6" onclick="fill('y')">y</button>
+   <button class="keyboard-button" id = "button7" onclick="fill('u')">u</button>
+   <button class="keyboard-button" id = "button8" onclick="fill('i')">i</button>
+   <button class="keyboard-button" id = "button9" onclick="fill('o')">o</button>
+   <button class="keyboard-button" id = "button10" onclick="fill('p')">p</button>
+  </div>
+  <div class="second-row">
+   <button class="keyboard-button" id = "button11" onclick="fill('a')">a</button>
+   <button class="keyboard-button" id = "button12" onclick="fill('s')">s</button>
+   <button class="keyboard-button" id = "button13" onclick="fill('d')">d</button>
+   <button class="keyboard-button" id = "button14" onclick="fill('f')">f</button>
+   <button class="keyboard-button" id = "button15" onclick="fill('g')">g</button>
+   <button class="keyboard-button" id = "button16" onclick="fill('h')">h</button>
+   <button class="keyboard-button" id = "button17" onclick="fill('j')">j</button>
+   <button class="keyboard-button" id = "button18" onclick="fill('k')">k</button>
+   <button class="keyboard-button" id = "button19" onclick="fill('l')">l</button>
+  </div>
+  <div class="third-row">
+   <button class="keyboard-button" onclick="del()">Del</button>
+   <button class="keyboard-button" id = "button20" onclick="fill('z')">z</button>
+   <button class="keyboard-button" id = "button21" onclick="fill('x')">x</button>
+   <button class="keyboard-button" id = "button22" onclick="fill('c')">c</button>
+   <button class="keyboard-button" id = "button23" onclick="fill('v')">v</button>
+   <button class="keyboard-button" id = "button24" onclick="fill('b')">b</button>
+   <button class="keyboard-button" id = "button25" onclick="fill('n')">n</button>
+   <button class="keyboard-button" id = "button26" onclick="fill('m')">m</button>
+   <button class="keyboard-button" onclick="submit()">Submit</button>
+  </div>
+ </div>
+</body>
+</html>

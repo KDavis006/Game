@@ -31,7 +31,8 @@ let array3 = []
 
 function makeid() {
     let result           = '';
-    let characters       = 'aeioshrtn';
+    let characters       = ['a','e','i','o','s','h','r','t','n'];
+    let tf = '';
     for ( let i = 0; i < 4; i++ ) {
         let n = Math.ceil((Math.random() + 0.001) * characters.length);
         switch(n){
@@ -42,14 +43,28 @@ function makeid() {
                 n = 9;
                 break;
         }
-        result = characters.charAt(n);
+        do {
+          n = Math.ceil((Math.random() + 0.001) * characters.length);
+          result = characters[n];
+          for(let i = 0; i <= array.length;i++){
+            if(result == array[i]){
+              tf = 'No'
+              break
+            }
+            tf = 'Yes'
+          }
+        }
+        while(tf == 'No')
+        characters.splice(n, 1);
+        console.log(characters);
+        
         let v = Math.ceil((Math.random() + 0.001)*25);
         do {   
             v = Math.ceil((Math.random() + 0.001)*25);
         } 
         while (document.getElementById(`character${v}`).innerText != "");
         document.getElementById(`character${v}`).innerText = result
-        array.push(v);
+        array.push(result);
     }
     console.log(array);
     check()
@@ -237,7 +252,7 @@ function submit(){
         return
       }
     }
-    document.getElementById('id01').style.display='block'
+    document.getElementById('win').style.display='block'
   }
 }
 

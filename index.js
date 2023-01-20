@@ -1,3 +1,32 @@
+let array = []
+let array2 = []
+let array3 = [];
+let array4 = []
+
+let word1 = ""
+let word2 = ""
+let word3 = ""
+let word4 = ""
+let word5 = ""
+let word6 = ""
+let word7 = ""
+let word8 = ""
+let word9 = ""
+let word10 = ""
+
+let arrayword = ""
+
+let arrayword1 = ""
+let arrayword2 = ""
+let arrayword3 = ""
+let arrayword4 = ""
+let arrayword5 = ""
+let arrayword6 = ""
+let arrayword7 = ""
+let arrayword8 = ""
+let arrayword9 = ""
+let arrayword10 = ""
+
 function fill(character){
  for(let i = 1; i <= 25; i++){
  let x = document.getElementById(`character${i}`).innerText
@@ -13,7 +42,7 @@ function fill(character){
 function del(){
     for(let i = 25;i >= 1;i--){
         let y = document.getElementById(`character${i}`).innerText
-        if(i == array[0] || i == array[1] || i == array[2] || i == array[3]){
+        if(i == array4[0] || i == array4[1] || i == array4[2] || i == array4[3]){
             continue;
         }
         if(y == ""){
@@ -25,8 +54,7 @@ function del(){
     }
 }
 
-let array = []
-let array3 = []
+
 
 
 function makeid() {
@@ -65,22 +93,15 @@ function makeid() {
         while (document.getElementById(`character${v}`).innerText != "");
         document.getElementById(`character${v}`).innerText = result
         array.push(result);
+        array4.push(v);
     }
     console.log(array);
+    console.log(array4)
     check()
     return result;
 }
 
-let arrayword1 = ""
-let arrayword2 = ""
-let arrayword3 = ""
-let arrayword4 = ""
-let arrayword5 = ""
-let arrayword6 = ""
-let arrayword7 = ""
-let arrayword8 = ""
-let arrayword9 = ""
-let arrayword10 = ""
+
 
 function check(){
   for(let i = 1; i <= 5; i++){
@@ -144,10 +165,12 @@ function check(){
   }
   array3.push(arrayword10);
   console.log(array3);
-  if(array3[arrayword1].length >= 3 || array3[arrayword2].length >= 3 || array3[arrayword3].length >= 3 || array3[arrayword4].length >= 3 || array3[arrayword5].length >= 3 || array3[arrayword6].length >= 3 || array3[arrayword7].length >= 3 || array3[arrayword8].length >= 3 || array3[arrayword9].length >= 3 || array3[arrayword10].length >= 3){
-    fullclear()
-    makeid()
+  for(let i = 0;i < array3.length; i++){
+    let array3word = array3[i]
+  if(array3word.length >= 3){
+    reset()
   }
+}
 }
 
 function fullclear(){
@@ -156,20 +179,277 @@ function fullclear(){
   }
 }
 
-let array2 = [];
+function fills(letter) {
+  if (letter == "enter") {
+    submit()
+      }
+  }
+  if (letter  == "backspace") {
+    del()
+  }
+  if (letter  == "q") {
+    for(let i = 1; i <= 25; i++){
+      let x = document.getElementById(`character${i}`).innerText
+      if(x == ""){
+       console.log("q")
+       document.getElementById(`character${i}`).innerText = 'q'
+       
+      }
+      }
+  }
+  if (letter  == "w") {
+    for(let i = 1; i <= 25; i++){
+      let x = document.getElementById(`character${i}`).innerText
+      if(x == ""){
+       
+       document.getElementById(`character${i}`).innerText = 'w'
+       
+      }
+      }
+  }
+  if (letter  == "e") {
+    for(let i = 1; i <= 25; i++){
+      let x = document.getElementById(`character${i}`).innerText
+      if(x == ""){
+       
+       document.getElementById(`character${i}`).innerText = 'e'
+       
+      }
+      }
+  }
+  if (letter  == "r") {
+    for(let i = 1; i <= 25; i++){
+      let x = document.getElementById(`character${i}`).innerText
+      if(x == ""){
+       
+       document.getElementById(`character${i}`).innerText = 'r'
+       
+      }
+      }
+  }
+  if (letter  == "t") {
+    for(let i = 1; i <= 25; i++){
+      let x = document.getElementById(`character${i}`).innerText
+      if(x == ""){
+       
+       document.getElementById(`character${i}`).innerText = 't'
+       
+      }
+      }
+  }
+  if (letter  == "y") {
+    for(let i = 1; i <= 25; i++){
+      let x = document.getElementById(`character${i}`).innerText
+      if(x == ""){
+       
+       document.getElementById(`character${i}`).innerText = 'y'
+       
+      }
+      }
+  }
+  if (letter  == "u") {
+    for(let i = 1; i <= 25; i++){
+      let x = document.getElementById(`character${i}`).innerText
+      if(x == ""){
+       
+       document.getElementById(`character${i}`).innerText = 'u'
+       
+      }
+      }
+  }
+  if (letter  == "i") {
+    for(let i = 1; i <= 25; i++){
+      let x = document.getElementById(`character${i}`).innerText
+      if(x == ""){
+       
+       document.getElementById(`character${i}`).innerText = 'i'
+       
+      }
+      }
+  }
+  if (letter  == "o") {
+    for(let i = 1; i <= 25; i++){
+      let x = document.getElementById(`character${i}`).innerText
+      if(x == ""){
+       
+       document.getElementById(`character${i}`).innerText = 'o'
+       
+      }
+      }
+  }
+  if (letter  == "p") {
+    for(let i = 1; i <= 25; i++){
+      let x = document.getElementById(`character${i}`).innerText
+      if(x == ""){
+       
+       document.getElementById(`character${i}`).innerText = 'p'
+       
+      }
+      }
+  }
+  if (letter  == "a") {
+    for(let i = 1; i <= 25; i++){
+      let x = document.getElementById(`character${i}`).innerText
+      if(x == ""){
+       
+       document.getElementById(`character${i}`).innerText = 'a'
+       
+      }
+      }
+  }
+  if (letter  == "s") {
+    for(let i = 1; i <= 25; i++){
+      let x = document.getElementById(`character${i}`).innerText
+      if(x == ""){
+       
+       document.getElementById(`character${i}`).innerText = 's'
+       
+      }
+      }
+  }
+  if (letter  == "d") {
+    for(let i = 1; i <= 25; i++){
+      let x = document.getElementById(`character${i}`).innerText
+      if(x == ""){
+       
+       document.getElementById(`character${i}`).innerText = 'd'
+       
+      }
+      }
+  }
+  if (letter  == "f") {
+    for(let i = 1; i <= 25; i++){
+      let x = document.getElementById(`character${i}`).innerText
+      if(x == ""){
+       
+       document.getElementById(`character${i}`).innerText = 'f'
+       
+      }
+      }
+  }
+  if (letter  == "g") {
+    for(let i = 1; i <= 25; i++){
+      let x = document.getElementById(`character${i}`).innerText
+      if(x == ""){
+       
+       document.getElementById(`character${i}`).innerText = 'g'
+       
+      }
+      }
+  }
+  if (letter  == "h") {
+    for(let i = 1; i <= 25; i++){
+      let x = document.getElementById(`character${i}`).innerText
+      if(x == ""){
+       
+       document.getElementById(`character${i}`).innerText = 'h'
+       
+      }
+      }
+  }
+  if (letter  == "j") {
+    for(let i = 1; i <= 25; i++){
+      let x = document.getElementById(`character${i}`).innerText
+      if(x == ""){
+       
+       document.getElementById(`character${i}`).innerText = 'j'
+       
+      }
+      }
+  }
+  if (letter  == "k") {
+    for(let i = 1; i <= 25; i++){
+      let x = document.getElementById(`character${i}`).innerText
+      if(x == ""){
+       
+       document.getElementById(`character${i}`).innerText = "k"
+       
+      }
+      }
+  }
+  if (letter  == "l") {
+    for(let i = 1; i <= 25; i++){
+      let x = document.getElementById(`character${i}`).innerText
+      if(x == ""){
+       
+       document.getElementById(`character${i}`).innerText = "l"
+       
+      }
+      }
+  }
+  if (letter  == "z") {
+    for(let i = 1; i <= 25; i++){
+      let x = document.getElementById(`character${i}`).innerText
+      if(x == ""){
+       
+       document.getElementById(`character${i}`).innerText = "z"
+       
+      }
+      }
+  }
+  if (letter  == "x") {
+    for(let i = 1; i <= 25; i++){
+      let x = document.getElementById(`character${i}`).innerText
+      if(x == ""){
+       
+       document.getElementById(`character${i}`).innerText = "x"
+       
+      }
+      }
+  }
+  if (letter  == "c") {
+    for(let i = 1; i <= 25; i++){
+      let x = document.getElementById(`character${i}`).innerText
+      if(x == ""){
+       
+       document.getElementById(`character${i}`).innerText = "c"
+       
+      }
+      }
+  }
+  if (letter  == "v") {
+    for(let i = 1; i <= 25; i++){
+      let x = document.getElementById(`character${i}`).innerText
+      if(x == ""){
+       
+       document.getElementById(`character${i}`).innerText = "v"
+       
+      }
+      }
+  }
+  if (letter  == "b") {
+    for(let i = 1; i <= 25; i++){
+      let x = document.getElementById(`character${i}`).innerText
+      if(x == ""){
+       
+       document.getElementById(`character${i}`).innerText = "b"
+       
+      }
+      }
+  }
+  if (letter  == "n") {
+    for(let i = 1; i <= 25; i++){
+      let x = document.getElementById(`character${i}`).innerText
+      if(x == ""){
+       
+       document.getElementById(`character${i}`).innerText = "n"
+       
+      }
+      }
+  }
+  if (letter  == "m") {
+    for(let i = 1; i <= 25; i++){
+      let x = document.getElementById(`character${i}`).innerText
+      if(x == ""){
+       
+       document.getElementById(`character${i}`).innerText = "m"
+       
+      }
+      }
+  }
 
-let word1 = ""
-let word2 = ""
-let word3 = ""
-let word4 = ""
-let word5 = ""
-let word6 = ""
-let word7 = ""
-let word8 = ""
-let word9 = ""
-let word10 = ""
 
-let arrayword = ""
+
 
 function submit(){
     for(let i = 1; i <= 25; i++){
@@ -256,7 +536,39 @@ function submit(){
   }
 }
 
+function reset(){
+array2 = [];
 
+word1 = ""
+word2 = ""
+word3 = ""
+word4 = ""
+word5 = ""
+word6 = ""
+word7 = ""
+word8 = ""
+word9 = ""
+word10 = ""
+
+arrayword = ""
+
+arrayword1 = ""
+arrayword2 = ""
+arrayword3 = ""
+arrayword4 = ""
+arrayword5 = ""
+arrayword6 = ""
+arrayword7 = ""
+arrayword8 = ""
+arrayword9 = ""
+arrayword10 = ""
+
+array = []
+array3 = []
+
+fullclear()
+makeid()
+}
 
 
 
@@ -711,7 +1023,7 @@ let WORDS = [
     'bound',
     'depth',
     'candy',
-    'event',
+    'letter',
     'worse',
     'aware',
     'shell',

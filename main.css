@@ -40,7 +40,12 @@ h1 {
  border-radius: 1.5625rem; */
 }
 
-
+h3{
+    font-family: SmallFont;
+    font-size: 3rem;
+    text-align: center;
+    color: violet;
+}
 
 button{
  width: 4.6875rem;
@@ -96,6 +101,7 @@ button{
 }
 #main{
  margin: auto;
+ width: 10vw;
 }
 
 

@@ -1,6 +1,6 @@
 let array = []
 let array2 = []
-let array3 = [];
+let array3 = []
 let array4 = []
 
 let word1 = ""
@@ -180,275 +180,33 @@ function fullclear(){
   }
 }
 
-function fills(letter) {
-  if (letter == "enter") {
-    submit()
-      }
-  }
-  if (letter  == "backspace") {
+document.addEventListener("keyup", (e) => {
+
+  let pressedKey = String(e.key);
+  if (pressedKey === "Backspace"){
     del()
-  }
-  if (letter  == "q") {
-    for(let i = 1; i <= 25; i++){
-      let x = document.getElementById(`character${i}`).innerText
-      if(x == ""){
-       console.log("q")
-       document.getElementById(`character${i}`).innerText = 'q'
-       
-      }
-      }
-  }
-  if (letter  == "w") {
-    for(let i = 1; i <= 25; i++){
-      let x = document.getElementById(`character${i}`).innerText
-      if(x == ""){
-       
-       document.getElementById(`character${i}`).innerText = 'w'
-       
-      }
-      }
-  }
-  if (letter  == "e") {
-    for(let i = 1; i <= 25; i++){
-      let x = document.getElementById(`character${i}`).innerText
-      if(x == ""){
-       
-       document.getElementById(`character${i}`).innerText = 'e'
-       
-      }
-      }
-  }
-  if (letter  == "r") {
-    for(let i = 1; i <= 25; i++){
-      let x = document.getElementById(`character${i}`).innerText
-      if(x == ""){
-       
-       document.getElementById(`character${i}`).innerText = 'r'
-       
-      }
-      }
-  }
-  if (letter  == "t") {
-    for(let i = 1; i <= 25; i++){
-      let x = document.getElementById(`character${i}`).innerText
-      if(x == ""){
-       
-       document.getElementById(`character${i}`).innerText = 't'
-       
-      }
-      }
-  }
-  if (letter  == "y") {
-    for(let i = 1; i <= 25; i++){
-      let x = document.getElementById(`character${i}`).innerText
-      if(x == ""){
-       
-       document.getElementById(`character${i}`).innerText = 'y'
-       
-      }
-      }
-  }
-  if (letter  == "u") {
-    for(let i = 1; i <= 25; i++){
-      let x = document.getElementById(`character${i}`).innerText
-      if(x == ""){
-       
-       document.getElementById(`character${i}`).innerText = 'u'
-       
-      }
-      }
-  }
-  if (letter  == "i") {
-    for(let i = 1; i <= 25; i++){
-      let x = document.getElementById(`character${i}`).innerText
-      if(x == ""){
-       
-       document.getElementById(`character${i}`).innerText = 'i'
-       
-      }
-      }
-  }
-  if (letter  == "o") {
-    for(let i = 1; i <= 25; i++){
-      let x = document.getElementById(`character${i}`).innerText
-      if(x == ""){
-       
-       document.getElementById(`character${i}`).innerText = 'o'
-       
-      }
-      }
-  }
-  if (letter  == "p") {
-    for(let i = 1; i <= 25; i++){
-      let x = document.getElementById(`character${i}`).innerText
-      if(x == ""){
-       
-       document.getElementById(`character${i}`).innerText = 'p'
-       
-      }
-      }
-  }
-  if (letter  == "a") {
-    for(let i = 1; i <= 25; i++){
-      let x = document.getElementById(`character${i}`).innerText
-      if(x == ""){
-       
-       document.getElementById(`character${i}`).innerText = 'a'
-       
-      }
-      }
-  }
-  if (letter  == "s") {
-    for(let i = 1; i <= 25; i++){
-      let x = document.getElementById(`character${i}`).innerText
-      if(x == ""){
-       
-       document.getElementById(`character${i}`).innerText = 's'
-       
-      }
-      }
-  }
-  if (letter  == "d") {
-    for(let i = 1; i <= 25; i++){
-      let x = document.getElementById(`character${i}`).innerText
-      if(x == ""){
-       
-       document.getElementById(`character${i}`).innerText = 'd'
-       
-      }
-      }
-  }
-  if (letter  == "f") {
-    for(let i = 1; i <= 25; i++){
-      let x = document.getElementById(`character${i}`).innerText
-      if(x == ""){
-       
-       document.getElementById(`character${i}`).innerText = 'f'
-       
-      }
-      }
-  }
-  if (letter  == "g") {
-    for(let i = 1; i <= 25; i++){
-      let x = document.getElementById(`character${i}`).innerText
-      if(x == ""){
-       
-       document.getElementById(`character${i}`).innerText = 'g'
-       
-      }
-      }
-  }
-  if (letter  == "h") {
-    for(let i = 1; i <= 25; i++){
-      let x = document.getElementById(`character${i}`).innerText
-      if(x == ""){
-       
-       document.getElementById(`character${i}`).innerText = 'h'
-       
-      }
-      }
-  }
-  if (letter  == "j") {
-    for(let i = 1; i <= 25; i++){
-      let x = document.getElementById(`character${i}`).innerText
-      if(x == ""){
-       
-       document.getElementById(`character${i}`).innerText = 'j'
-       
-      }
-      }
-  }
-  if (letter  == "k") {
-    for(let i = 1; i <= 25; i++){
-      let x = document.getElementById(`character${i}`).innerText
-      if(x == ""){
-       
-       document.getElementById(`character${i}`).innerText = "k"
-       
-      }
-      }
-  }
-  if (letter  == "l") {
-    for(let i = 1; i <= 25; i++){
-      let x = document.getElementById(`character${i}`).innerText
-      if(x == ""){
-       
-       document.getElementById(`character${i}`).innerText = "l"
-       
-      }
-      }
-  }
-  if (letter  == "z") {
-    for(let i = 1; i <= 25; i++){
-      let x = document.getElementById(`character${i}`).innerText
-      if(x == ""){
-       
-       document.getElementById(`character${i}`).innerText = "z"
-       
-      }
-      }
-  }
-  if (letter  == "x") {
-    for(let i = 1; i <= 25; i++){
-      let x = document.getElementById(`character${i}`).innerText
-      if(x == ""){
-       
-       document.getElementById(`character${i}`).innerText = "x"
-       
-      }
-      }
-  }
-  if (letter  == "c") {
-    for(let i = 1; i <= 25; i++){
-      let x = document.getElementById(`character${i}`).innerText
-      if(x == ""){
-       
-       document.getElementById(`character${i}`).innerText = "c"
-       
-      }
-      }
-  }
-  if (letter  == "v") {
-    for(let i = 1; i <= 25; i++){
-      let x = document.getElementById(`character${i}`).innerText
-      if(x == ""){
-       
-       document.getElementById(`character${i}`).innerText = "v"
-       
-      }
-      }
-  }
-  if (letter  == "b") {
-    for(let i = 1; i <= 25; i++){
-      let x = document.getElementById(`character${i}`).innerText
-      if(x == ""){
-       
-       document.getElementById(`character${i}`).innerText = "b"
-       
-      }
-      }
-  }
-  if (letter  == "n") {
-    for(let i = 1; i <= 25; i++){
-      let x = document.getElementById(`character${i}`).innerText
-      if(x == ""){
-       
-       document.getElementById(`character${i}`).innerText = "n"
-       
-      }
-      }
-  }
-  if (letter  == "m") {
-    for(let i = 1; i <= 25; i++){
-      let x = document.getElementById(`character${i}`).innerText
-      if(x == ""){
-       
-       document.getElementById(`character${i}`).innerText = "m"
-       
-      }
-      }
+    return;
   }
 
+  if (pressedKey === "Enter") {
+        submit()
+        return
+    }
+
+    let found = pressedKey.match(/[a-z]/gi)
+    if (!found || found.length > 1) {
+        return
+    } else {
+        for(let i = 1; i <= 25; i++){
+          let x = document.getElementById(`character${i}`).innerText
+          if(x == ""){
+  
+            document.getElementById(`character${i}`).innerText = pressedKey
+            return
+ }
+ }
+    }
+})
 
 
 

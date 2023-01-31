@@ -42,7 +42,7 @@ function fill(character){
 function del(){
     for(let i = 25;i >= 1;i--){
         let y = document.getElementById(`character${i}`).innerText
-        if(i == array4[0] || i == array4[1] || i == array4[2] || i == array4[3]){
+        if(i == array4[0] || i == array4[1] || i == array4[2] || i == array4[3] || i == array4[4]){
             continue;
         }
         if(y == ""){

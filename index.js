@@ -202,7 +202,9 @@ document.addEventListener("keyup", (e) => {
 
     let found = pressedKey.match(/[a-z]/gi)
     if (!found || found.length > 1) {
-        return
+        return;
+    } else if(found == "Fll" || found == "F12"){
+      return;
     } else {
         for(let i = 1; i <= 25; i++){
           let x = document.getElementById(`character${i}`).innerText

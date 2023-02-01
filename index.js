@@ -336,40 +336,7 @@ fullclear()
 makeid()
 }
 
-// Get reference to the leaderboard table and add button
-const leaderboard = document.querySelector("#leaderboard");
-const addBtn = document.querySelector("#addBtn");
-// Array to store scores
-let scores = [];
-// Event listener for add button
-addBtn.addEventListener("click", function() {
-  // Prompt user for name and score
-  const name = prompt("Enter your name:");
-  const score = parseInt(prompt("Enter your score:"));
-  // Add score to scores array
-  scores.push({ name: name, score: score });
-  // Sort scores in descending order
-  scores.sort(function(a, b) {
-    return b.score - a.score;
-  });
-  // Update leaderboard table
-  leaderboard.innerHTML = `
-    <tr>
-      <th>Rank</th>
-      <th>Name</th>
-      <th>Score</th>
-    </tr>
-  `;
-  for (let i = 0; i < scores.length; i++) {
-    leaderboard.innerHTML += `
-      <tr>
-        <td>${i + 1}</td>
-        <td>${scores[i].name}</td>
-        <td>${scores[i].score}</td>
-      </tr>
-    `;
-  }
-});
+
 
 let WORDS = [
     'which',

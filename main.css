@@ -15,11 +15,28 @@ body{
  overflow-y: hidden;
 }
 
+ol{
+    column-count: 2;
+    column-gap: 3.125rem;
+    margin-left: 3vw;
+}
+
+#board{
+    display:flex;
+    flex-direction: column;
+}
+li{
+    color: violet;
+    font-size: xx-large;
+    text-align: center;
+    font-family: BigFont;
+}
+
 h1{
  color: violet;
 }
 
-h1 {
+h1{
  font-size: 7vw;
  text-transform: uppercase;
  text-align: center;
@@ -95,16 +112,35 @@ button{
 
 #container2{
  display: flex;
+ flex-direction: column;
+ gap: .25rem;
  justify-content: center;
  align-items: center;
  padding-top: 12.5rem;
 }
 #main{
  margin: auto;
- width: 10vw;
+ width: auto;
 }
 
+#timer{
+    position: absolute;
+    top: 30vh;
+    left:5vw;
+    background-color: #FBEAEB;
+    padding: 1rem;
+    border-radius: 25px;
+}
 
+#back{
+    position:absolute;
+    left:80vw;
+    top:35vh;
+}
+#leader{
+    margin:auto;
+    width:20vw;
+}
 
 
 button:hover {

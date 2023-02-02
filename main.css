@@ -119,7 +119,7 @@ button{
  text-transform: capitalize;
  font-size: 3rem;
  background-color: #FBEAEB;
- padding: 1rem;
+ padding: 6px;
  font-family: SmallFont; 
  transition: all 1s;
 }

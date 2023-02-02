@@ -203,7 +203,7 @@ document.addEventListener("keyup", (e) => {
     let found = pressedKey.match(/[a-z]/gi)
     if (!found || found.length > 1) {
         return;
-    } else if(found == "Fll" || found == "F12"){
+    } else if(found == "F11" || found == "F12"){
       return;
     } else {
         for(let i = 1; i <= 25; i++){

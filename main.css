@@ -37,6 +37,7 @@ h1{
 }
 
 h1{
+ color: violet; 
  font-size: 7vw;
  text-transform: uppercase;
  text-align: center;
@@ -44,12 +45,21 @@ h1{
  font-family: BigFont;
 }
 
+h2{
+    color: violet;
+    font-size: 6vw;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    font-family: BigFont;
+}
+
 
 
 #container{
  display: flex;
- height: 28.125rem;
- width: 28.125rem;
+ height: 24rem;
+ width: 24rem;
  justify-content: space-evenly;
  align-content: space-between;
  margin: auto;
@@ -66,8 +76,8 @@ h3{
 }
 
 button{
- width: 5rem;
- height: 5rem;
+ width: 4rem;
+ height: 4rem;
  margin-top: .5rem;
  background-color: rgb(0, 0, 0);
  /* border: .25rem solid green; */
@@ -82,8 +92,6 @@ button{
 }
 
 #keyboard-cont {
- margin: 1rem 0;
- margin-top: 2vh;
  display: flex;
  flex-direction: column;
  align-items: center;
